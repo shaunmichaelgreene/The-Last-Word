@@ -1,3 +1,2 @@
-DESTROY DATABASE IF EXISTS lastword_db;
-
+DROP DATABASE IF EXISTS lastword_db;
 CREATE DATABASE lastword_db;
