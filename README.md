@@ -1,1 +1,3 @@
-# group-project-2
+# The Last Word
+
+The Last Word is a message board based game that encourages lengthy civil arguments that are decided through a battle of attrition. He or She who yells the loudest and the longest shall prevail! Users can post a topic for for others to discuss via comments, and whoever has the last word wins the argument! If a post or comment does not receive a comment reply within 24 hours, the post will lock and the most recent poster/commenter will win The Last Word award. No longer will arguments end in a civil agreement, or by way of an original poster deleting a post or blocking a dissenting commenter. Now you can simply win by arguing the longest! 
