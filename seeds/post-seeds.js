@@ -10,75 +10,75 @@ const postdata = [
     user_id: 8
   },
   {
-    title: 'Lectus nulla at volutpat diam ut venenatis tellus in metus.',
+    text: 'Lectus nulla at volutpat diam ut venenatis tellus in metus.',
     user_id: 1
   },
   {
-    title: 'Non enim.',
+    text: 'Non enim.',
     user_id: 4
   },
   {
-    title: 'Nec sagittis bibendum arcu vitae elementum curabitur.',
+    text: 'Nec sagittis bibendum arcu vitae elementum curabitur.',
     user_id: 7
   },
   {
-    title: 'Lorem ipsum dolor sit amet, In hac habitasse platea dictumst. ',
+    text: 'Lorem ipsum dolor sit amet, In hac habitasse platea dictumst. ',
     user_id: 4
   },
   {
-    title: 'Last on spot.',
+    text: 'Last on spot.',
     user_id: 1
   },
   {
-    title: 'Scelerisque in dictum non quam nec rutrum.',
+    text: 'Scelerisque in dictum non quam nec rutrum.',
     user_id: 1
   },
   {
-    title: 'Odio ut enim blandit ',
+    text: 'Odio ut enim blandit ',
     user_id: 9
   },
   {
-    title: 'Craberry Juice Flakes',
+    text: 'Craberry Juice Flakes',
     user_id: 5
   },
   {
-    title: 'Pulvinar sit amet purus elementum integer.',
+    text: 'Pulvinar sit amet purus elementum integer.',
     user_id: 3
   },
   {
-    title: 'magna sit amet purus gravida.',
+    text: 'magna sit amet purus gravida.',
     user_id: 10
   },
   {
-    title: 'June, tellus feugiat sit amet',
+    text: 'June, tellus feugiat sit amet',
     user_id: 8
   },
   {
-    title: 'Time is an integer feugiat,',
+    text: 'Time is an integer feugiat,',
     user_id: 3
   },
   {
-    title: 'Stimuto urna cometit nunc id suses.',
+    text: 'Stimuto urna cometit nunc id suses.',
     user_id: 3
   },
   {
-    title:'Vitae quam gutlita lamb.',
+    text:'Vitae quam gutlita lamb.',
     user_id: 7
   },
   {
-    title: 'Platea dictumst june sutta danwa.',
+    text: 'Platea dictumst june sutta danwa.',
     user_id: 6
   },
   {
-    title: 'Hutso nour.',
+    text: 'Hutso nour.',
     user_id: 4
   },
   {
-    title: 'Hamber justice lamb house',
+    text: 'Hamber justice lamb house',
     user_id: 6
   },
   {
-    title: 'Pede lambsauce apples, June one',
+    text: 'Pede lambsauce apples, June one',
     user_id: 7
   }
 ];
