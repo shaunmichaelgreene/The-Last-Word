@@ -72,7 +72,7 @@ router.get('/:id', (req, res) => {
     });
 }); 
 
-//create new post (expects {text: 'This is a test post!', user_id: 1})
+//create new post (expects {"text": 'This is a test post!', "user_id": 1})
 router.post('/', withAuth, (req, res) => {
     Post.create({
         text: req.body.text,
@@ -85,7 +85,7 @@ router.post('/', withAuth, (req, res) => {
     });
 });
 
-//dev route only
+//dev route only - delete post
 router.delete('/:id', (req, res) => {
     console.log('id', req.params.id);
     Post.destroy({
