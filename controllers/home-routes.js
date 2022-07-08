@@ -2,6 +2,7 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
+//load all posts for the homepage
 router.get('/', (req, res) => {
     console.log('=====================');
     Post.findAll({
@@ -39,6 +40,7 @@ router.get('/', (req, res) => {
       });
 });
 
+//fetch a single post to render with handlebars
 router.get('/post/:id', (req, res) => {
     Post.findOne({
         where: {
