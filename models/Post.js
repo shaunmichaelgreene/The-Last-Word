@@ -22,10 +22,10 @@ Post.init(
           key: 'id'
         }
       }, 
-      created_at: {
-        type: DataTypes.TIME,
-        allowNull: false        
-      }
+      // created_at: {
+      //   type: DataTypes.TIME,
+      //   allowNull: false        
+      // }
     },
     {
       sequelize,
