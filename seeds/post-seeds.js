@@ -2,27 +2,27 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    text: 'Velit laoreet id donec ultrices tincidunt arcu non.',
+    text: 'Waking up early should be a crime.',
     user_id: 10
   },
   {
-    text: 'Morbi non quam nec dui luctus rutrum.',
+    text: 'Saturday is for satting',
     user_id: 8
   },
   {
-    text: 'Lectus nulla at volutpat diam ut venenatis tellus in metus.',
+    text: 'Oranges are the superior fruit.',
     user_id: 1
   },
   {
-    text: 'Non enim.',
+    text: 'Last.',
     user_id: 4
   },
   {
-    text: 'Nec sagittis bibendum arcu vitae elementum curabitur.',
+    text: 'Sims 4 or Sims 3?',
     user_id: 7
   },
   {
-    text: 'Lorem ipsum dolor sit amet, In hac habitasse platea dictumst. ',
+    text: 'Beau is the best ACNH character. ',
     user_id: 4
   },
   {
@@ -30,55 +30,55 @@ const postdata = [
     user_id: 1
   },
   {
-    text: 'Scelerisque in dictum non quam nec rutrum.',
+    text: 'Mondays should be rest days.',
     user_id: 1
   },
   {
-    text: 'Odio ut enim blandit ',
+    text: 'Christmas cookies >>>>. ',
     user_id: 9
   },
   {
-    text: 'Craberry Juice Flakes',
+    text: 'Craberry Juice and Frosted Flakes',
     user_id: 5
   },
   {
-    text: 'Pulvinar sit amet purus elementum integer.',
+    text: 'Coding Boot Camps are tough but worth it.',
     user_id: 3
   },
   {
-    text: 'magna sit amet purus gravida.',
+    text: 'Which anime is your favorite?.',
     user_id: 10
   },
   {
-    text: 'June, tellus feugiat sit amet',
+    text: 'Last, last, last, I won.',
     user_id: 8
   },
   {
-    text: 'Time is an integer feugiat,',
+    text: 'Planners are better digital.',
     user_id: 3
   },
   {
-    text: 'Stimuto urna cometit nunc id suses.',
+    text: 'Planners are for chums, its all about wiging it.',
     user_id: 3
   },
   {
-    text:'Vitae quam gutlita lamb.',
+    text:'I won, you lose.',
     user_id: 7
   },
   {
-    text: 'Platea dictumst june sutta danwa.',
+    text: 'One day at a time.',
     user_id: 6
   },
   {
-    text: 'Hutso nour.',
+    text: 'Last on the word.',
     user_id: 4
   },
   {
-    text: 'Hamber justice lamb house',
+    text: 'Nintindo Swith or PC?',
     user_id: 6
   },
   {
-    text: 'Pede lambsauce apples, June one',
+    text: 'Anyone on here sane?',
     user_id: 7
   }
 ];
