@@ -1,5 +1,7 @@
 var format = require('date-fns/format');
-var formatDistanceToNow = require('date-fns/formatDistanceToNow')
+var formatDistanceToNow = require('date-fns/formatDistanceToNow');
+var differenceInHours = require('date-fns/differenceInHours');
+
 
 module.exports = {
     format_date: date => {
@@ -11,10 +13,20 @@ module.exports = {
     format_timeElapsed: date => {
       return `${formatDistanceToNow(new Date(date))}`
     },
+    format_hoursDifference: date => {
+      return `${differenceInHours(new Date(date), new Date())}`
+    },
     format_plural: (word, amount) => {
       if (amount !== 1) {
         return `${word}s`;
       }
       return word;
+    },
+    format_commentsExist: (commentsArray) => {
+      if (commentsArray.length === 0) {
+        return true;
+      } else {
+        return false;
+      }
     }
 };
