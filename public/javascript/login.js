@@ -1,6 +1,5 @@
 async function loginFormHandler(event) {
     event.preventDefault
-
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
@@ -23,7 +22,6 @@ async function loginFormHandler(event) {
 }
 async function registrationFormHandler(event) {
     event.preventDefault
-
     const username = document.querySelector('#username-createaccount').value.trim();
     const email = document.querySelector('#email-createaccount').value.trim();
     const password = document.querySelector('#password-createaccount').value.trim();
@@ -46,8 +44,6 @@ async function registrationFormHandler(event) {
         }
     }
 }
-
-
 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 

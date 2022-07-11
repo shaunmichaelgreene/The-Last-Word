@@ -3,8 +3,6 @@ const sequelize = require('../../config/connection');
 const { Post, User, Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 const isActive = require('../../utils/isActive')
-var differenceInHours = require('date-fns/differenceInHours')
-
 
 //get all posts
 router.get('/', (req, res) => {
@@ -72,7 +70,6 @@ router.get('/:id', (req, res) => {
             plain: true
         })
         
-        console.log('success!')
         plainPostData.is_active = isActive(plainPostData)
         console.log(plainPostData.is_active)
         res.json(plainPostData);
