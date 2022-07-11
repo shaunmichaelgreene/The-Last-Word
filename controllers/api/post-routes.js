@@ -77,7 +77,7 @@ router.get('/:id', (req, res) => {
             currentTime = new Date()
             postTime = dbPostData.created_at
             var postHoursDifference = differenceInHours(currentTime, postTime)
-            if (dbPostData.comments) {
+            if (dbPostData.comments.length > 0) {
                 comments = dbPostData.comments
                 lastComment = comments[comments.length - 1]
                 lastCommentTime = lastComment.created_at;
