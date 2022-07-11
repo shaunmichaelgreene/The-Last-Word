@@ -1,6 +1,7 @@
 {{> post-info post}}
-
+{{!-- if user is not logged in, hide comment-form --}}
 {{#if loggedIn}}
+{{!-- add another conditional here to check if the post is active/unlocked, by checking if activePost is true. Then if activePost = true, display the comment form. Else, display something like "Post is locked! lastComment.username had The Last Word!" --}}
 <form class="comment-form">
   <div>
     <textarea name="comment-body"></textarea>
@@ -13,6 +14,14 @@
 {{/if}}
 
 {{> comments post.comments}}
+
+{{#if post.created_at}}
+<div>{{post.created_at}}</div>
+{{/if}}
+
+{{#if post.is_active}}
+<div>This Works!</div>
+{{/if}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
