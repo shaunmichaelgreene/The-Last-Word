@@ -22,14 +22,15 @@ Post.init(
           model: 'user',
           key: 'id'
         }
-      }, 
+      }
       // created_at: {
       //   type: DataTypes.TIME,
       //   allowNull: false        
       // }
-      is_active: {
-        type: DataTypes.VIRTUAL,
-        default: true,
+      // is_active: {
+      //   type: DataTypes.BOOLEAN,
+      //   allowNull: false,
+      //   default: true
         // get() {
         //   currentTime = new Date()
         //   postTime = this.created_at
@@ -48,7 +49,7 @@ Post.init(
         //       return true
         //   } else return false
         // }
-      }
+      
     },
     {
       sequelize,

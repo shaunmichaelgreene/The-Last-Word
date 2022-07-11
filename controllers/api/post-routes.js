@@ -45,7 +45,6 @@ router.get('/:id', (req, res) => {
             'id',
             'text',
             'created_at',
-            'is_active'
         ],
         include: [
             {
@@ -67,6 +66,10 @@ router.get('/:id', (req, res) => {
             res.status(404).json({ message: 'No post found with this ID!' });
             return;
         }
+
+        let plainPostData = dbPostData.get({
+            plain: true
+        })
         //test logic
         function isActive(dbPostData) {
             //deconstruct dbPostData to establish easier to use variables for the time of the Post, last comment of the post, and time of the last comment. Also convert the difference in the postTime and currentTime for the post into a usable value (and do the same for the most recent comment), using the date-fns node package's differenceInHours method
@@ -93,8 +96,9 @@ router.get('/:id', (req, res) => {
             
         }
         console.log('success!')
-        console.log(dbPostData.is_active)
-        res.json(dbPostData);
+        plainPostData.is_active = isActive(plainPostData)
+        console.log(plainPostData.is_active)
+        res.json(plainPostData);
     })
     .catch(err => {
       console.log(err);

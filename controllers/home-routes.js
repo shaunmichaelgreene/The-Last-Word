@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
+var differenceInHours = require('date-fns/differenceInHours')
+
 
 //load all posts for the homepage
 router.get('/', (req, res) => {
@@ -72,7 +74,31 @@ router.get('/post/:id', (req, res) => {
         }
   
         const post = dbPostData.get({ plain: true });
-  
+        function isActive(dbPostData) {
+            timeLimit = 24
+            currentTime = new Date()
+            postTime = dbPostData.created_at
+            var postHoursDifference = differenceInHours(currentTime, postTime)
+            if (dbPostData.comments) {
+                comments = dbPostData.comments
+                lastComment = comments[comments.length - 1]
+                lastCommentTime = lastComment.created_at;
+                lastCommentHoursDifference = differenceInHours(currentTime, lastCommentTime)
+            } else {
+                var noComments = true //if dbPost.Data.comments doesn't exist, then there are no comments
+            }
+        
+            if (postHoursDifference < timeLimit) {
+                return true //(post is less than 24 hours old, post IS active no matter what)
+            } else if (noComments) {
+                return false //(post is older than 24 hrs, no comments exist, post IS NOT active)
+            } else if (lastCommentHoursDifference < timeLimit) {
+                return true //(post is older than 24 hours, comments exist but since most recent is younger than 24 hrs,  post is still active)
+            } else return false //(comments exist, but since most recent is older than 24 hours, post is NOT active)
+            
+        }
+        post.is_active = isActive(post)
+        console.log(post.is_active)
         res.render('single-post', {
           post,
           loggedIn: req.session.loggedIn
