@@ -12,7 +12,7 @@ const commentdata = [
     post_id: 8
   },
   {
-    comment_text: 'In congue.',
+    comment_text: 'Wouldnt you have commited it?.',
     user_id: 3,
     post_id: 10
   },
@@ -157,7 +157,7 @@ const commentdata = [
     post_id: 5
   },
   {
-    comment_text: 'Kalemtoe donec quias.',
+    comment_text: 'First.',
     user_id: 10,
     post_id: 1
   },
@@ -172,12 +172,12 @@ const commentdata = [
     post_id: 3
   },
   {
-    comment_text: 'Mjeof ut massa quis',
+    comment_text: 'Wouldnt you have commited it?.',
     user_id: 10,
     post_id: 14
   },
   {
-    comment_text: 'Maecenas luctus tincidunt magna vulputate.',
+    comment_text: 'Last.',
     user_id: 10,
     post_id: 8
   },
@@ -232,17 +232,12 @@ const commentdata = [
     post_id: 19
   },
   {
-    comment_text: 'Nunc purus, odio',
-    user_id: 10,
-    post_id: 1
-  },
-  {
     comment_text: 'Nunc viverra prion rasin .',
     user_id: 2,
     post_id: 19
   },
   {
-    comment_text: 'Lioim leo lama',
+    comment_text: 'First.',
     user_id: 10,
     post_id: 1
   },
