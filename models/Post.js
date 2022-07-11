@@ -1,6 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-var differenceInHours = require('date-fns/differenceInHours')
 
 class Post extends Model {}
 
@@ -23,7 +22,6 @@ Post.init(
           key: 'id'
         }
       }
-      
     },
     {
       sequelize,
