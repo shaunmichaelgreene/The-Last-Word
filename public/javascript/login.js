@@ -21,12 +21,12 @@ async function loginFormHandler(event) {
         }
     }
 }
-async function signupFormHandler(event) {
+async function registrationFormHandler(event) {
     event.preventDefault
 
-    const username = document.querySelector('#usernam-signup').value.trim();
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signup').value.trim();
+    const username = document.querySelector('#username-createaccount').value.trim();
+    const email = document.querySelector('#email-createaccount').value.trim();
+    const password = document.querySelector('#password-createaccount').value.trim();
 
     if (username && email && password) {
         const response = await fetch('/api/users', {
@@ -51,4 +51,4 @@ async function signupFormHandler(event) {
 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 
-document.querySelector('.signup-form').addEventListener('submit', signupFormHandler);
+document.querySelector('.registration-form').addEventListener('submit', registrationFormHandler);
