@@ -22,8 +22,8 @@ module.exports = {
       }
       return word;
     },
-    format_commentsExist: (commentsArray) => {
-      if (commentsArray.length === 0) {
+    check_comments: (post) => {
+      if (post.comments.length === 0) {
         return true;
       } else {
         return false;
