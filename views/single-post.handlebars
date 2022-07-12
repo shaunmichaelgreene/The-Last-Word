@@ -1,0 +1,28 @@
+{{> post-info post}}
+{{!-- if user is not logged in, hide comment-form --}}
+{{#if post.is_active}}
+{{#if loggedIn}}
+{{!-- add another conditional here to check if the post is active/unlocked, by checking if activePost is true. Then if activePost = true, display the comment form. Else, display something like "Post is locked! lastComment.username had The Last Word!" --}}
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">new comment</button>
+  </div>
+</form>
+{{else}}
+  <a href="/login">You must be logged in to post comments, click here to log in</a>
+{{/if}}
+<div id="post-active" class="meta">This post is still active, you can still get The Last Word!</div>
+{{else}}
+  <h2>This post has been locked! | {{post.last_word}} got The Last Word!</h2>
+{{/if}}
+
+{{> comments post.comments}}
+
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+{{/if}}
