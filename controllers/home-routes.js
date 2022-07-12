@@ -24,6 +24,9 @@ router.get('/', (req, res) => {
                 model: User,
                 attributes: ['username']
             }
+        ],
+        order: [
+            ['created_at', 'DESC']
         ]
     })
     .then(dbPostData => {
@@ -34,7 +37,7 @@ router.get('/', (req, res) => {
             post.dataValues.is_active = isActive(post.dataValues)
             post.get({ plain: true });
             // console.log(post.is_active)
-            // console.log(post)
+            console.log(post)
             return post.dataValues
         })
         res.render('homepage.handlebars', {
