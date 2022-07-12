@@ -27,9 +27,16 @@ router.get('/', (req, res) => {
         ]
     })
     .then(dbPostData => {
-        const posts = dbPostData.map(post => post.get({ plain: true }));
-        
-        // posts.is_active = isActive(posts)
+        //working default route
+        // const posts = dbPostData.map(post => post.get({ plain: true }));
+
+        const posts = dbPostData.map((post) => {
+            post.dataValues.is_active = isActive(post.dataValues)
+            post.get({ plain: true });
+            // console.log(post.is_active)
+            // console.log(post)
+            return post.dataValues
+        })
         res.render('homepage.handlebars', {
             posts,
             loggedIn: req.session.loggedIn

@@ -6,9 +6,9 @@
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
     |  Posted by {{user.username}} on {{format_date created_at}} | {{format_timeElapsed created_at}} ago.
   </div>
-  {{!-- {{#if post.is_active}}
+  {{#if is_active}}
     <div id="post-active" class="meta">This post is still active, you can still get The Last Word!</div>
   {{else}}
     <div id="post-locked" class="meta">This post is now locked!</div>
-  {{/if}} --}}
+  {{/if}}
 </article>
