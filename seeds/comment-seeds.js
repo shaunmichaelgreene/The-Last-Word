@@ -2,147 +2,132 @@ const { Comment } = require('../models');
 
 const commentdata = [
   {
-    comment_text: 'Nunc  interdum eu, tincidunt.',
+    comment_text: 'Id be in jail.',
     user_id: 6,
     post_id: 1
   },
   {
-    comment_text: 'Tincidunt morbi odio, elementum eu.',
+    comment_text: 'For sure.',
     user_id: 6,
     post_id: 8
   },
   {
-    comment_text: 'Wouldnt you have commited it?.',
+    comment_text: 'This is a crime, apple jacks.',
     user_id: 3,
     post_id: 10
   },
   {
-    comment_text: 'Diam arcu libero, rutrum ac,.',
+    comment_text: 'Last, last, last, last.',
     user_id: 3,
     post_id: 18
   },
   {
-    comment_text: 'In platea.',
+    comment_text: 'Sinms 3.',
     user_id: 7,
     post_id: 5
   },
   {
-    comment_text: 'Sapien.',
+    comment_text: 'Nope.',
     user_id: 1,
     post_id: 20
   },
   {
-    comment_text: 'Est morbi odio, elementum eu.',
+    comment_text: 'Last word in',
     user_id: 6,
     post_id: 7
   },
   {
-    comment_text: 'Dapibus, morbi odio, elementum eu..',
+    comment_text: 'Word.',
     user_id: 7,
     post_id: 4
   },
   {
-    comment_text: 'Praesent integer tincidunt ante vel ipsum.',
-    user_id: 6,
-    post_id: 12
-  },
-  {
-    comment_text: 'Ipsum nori bunn.',
+    comment_text: 'Not a chance.',
     user_id: 6,
     post_id: 20
   },
   {
-    comment_text: 'Norato lomi diam.',
+    comment_text: 'People really use real planners still?.',
     user_id: 3,
     post_id: 14
   },
   {
-    comment_text: 'Donu wheit leif took.',
+    comment_text: 'Last.',
     user_id: 5,
     post_id: 4
   },
   {
-    comment_text: 'Rising leo, fancy trio.',
+    comment_text: 'Best time of the year.',
     user_id: 4,
     post_id: 9
   },
   {
-    comment_text: 'Amber olutpat erat.' ,
-    user_id: 5,
-    post_id: 14
-  },
-  {
-    comment_text: 'July erat.',
-    user_id: 6,
-    post_id: 2
-  },
-  {
-    comment_text: 'Vem rem den.',
+    comment_text: 'True.',
     user_id: 8,
     post_id: 2
   },
   {
-    comment_text: 'Veolor vel esta loma.',
+    comment_text: 'Maybe? In another world this would be - sorta true? :P',
     user_id: 2,
     post_id: 20
   },
   {
-    comment_text: 'Xursus lowkey, lumis.',
+    comment_text: 'Ew.',
     user_id: 4,
     post_id: 11
   },
   {
-    comment_text:'Leka nuka moop',
+    comment_text:'Last word.',
     user_id: 5,
     post_id: 13
   },
   {
-    comment_text:'Jest west.',
+    comment_text:'You lose, I win.',
     user_id: 9,
     post_id: 16
   },
   {
-    comment_text: 'Curabitur convallis.',
+    comment_text: 'Last, Last.',
     user_id: 6,
     post_id: 4
   },
   {
-    comment_text: 'Cmus lemus refus.',
+    comment_text: 'Lemon Juice and French Fries.',
     user_id: 4,
     post_id: 10
   },
   {
-    comment_text: 'Nart lumita shoep.',
+    comment_text: 'Ideal.',
     user_id: 3,
     post_id: 8
   },
   {
-    comment_text: 'Deka deku leku .',
+    comment_text: 'This makes no sense.',
     user_id: 8,
     post_id: 10
   },
   {
-    comment_text: 'July is utajsd.',
+    comment_text: 'Digital >>>> Manuscript',
     user_id: 1,
     post_id: 15
   },
   {
-    comment_text: 'Class glasrt nert.',
+    comment_text: 'Nah, grapes',
     user_id: 5,
     post_id: 3
   },
   {
-    comment_text: 'Lorem et elit.',
+    comment_text: '.... is it bad I use a manual planner?',
     user_id: 1,
     post_id: 15
   },
   {
-    comment_text: 'Nappy liem lorem.',
+    comment_text: 'I win.',
     user_id: 4,
     post_id: 16
   },
   {
-    comment_text: 'Susmend prion sed ante',
+    comment_text: 'Last on the word.',
     user_id: 4,
     post_id: 18
   },
@@ -152,7 +137,7 @@ const commentdata = [
     post_id: 10
   },
   {
-    comment_text: 'Toror sed eget eliet.',
+    comment_text: 'Sims 4, for sure.',
     user_id: 7,
     post_id: 5
   },
@@ -162,12 +147,12 @@ const commentdata = [
     post_id: 1
   },
   {
-    comment_text: 'Dolar vel in quam.',
+    comment_text: 'PC, are you mad?',
     user_id: 3,
     post_id: 19
   },
   {
-    comment_text: 'Peni lorem et deka nisi nibh',
+    comment_text: 'Cherries',
     user_id: 5,
     post_id: 3
   },
@@ -182,67 +167,62 @@ const commentdata = [
     post_id: 8
   },
   {
-    comment_text: 'Cras in purus eu  ut massa quis augue  luctus.',
-    user_id: 10,
-    post_id: 11
-  },
-  {
-    comment_text: 'Etiam morbi sem mauris, laoreet ut, rhoncus aliquet,vel neque.',
+    comment_text: 'Sims 3 is way beter.',
     user_id: 8,
     post_id: 5
   },
   {
-    comment_text: 'Proin at turpis,  augue. Vestibulum rutrum rutrum a pede posuere nonummy.',
+    comment_text: 'Nintindo Switch!.',
     user_id: 8,
     post_id: 19
   },
   {
-    comment_text: 'Diam id ornare imperdiet.',
+    comment_text: 'Pc kinda person.',
     user_id: 9,
     post_id: 19
   },
   {
-    comment_text: 'Est et tempus est diam id ornare.',
+    comment_text: 'You lose.',
     user_id: 5,
     post_id: 4
   },
   {
-    comment_text:'Faecenas metus sapien ut nunc.',
+    comment_text:'So worth it.',
     user_id: 2,
     post_id: 11
   },
   {
-    comment_text: 'Vegitable donec ut dolar vel.',
+    comment_text: 'I love him.',
     user_id: 4,
     post_id: 6
   },
   {
-    comment_text: 'leo july august id',
+    comment_text: 'He is sooooo cute,',
     user_id: 9,
     post_id: 6
   },
   {
-    comment_text: 'Ac diam ac leo.',
+    comment_text: 'The truth >>>.',
     user_id: 7,
     post_id: 9
   },
   {
-    comment_text: 'Odio.',
+    comment_text: 'Vote for PC.',
     user_id: 4,
     post_id: 19
   },
   {
-    comment_text: 'Nunc viverra prion rasin .',
+    comment_text: 'PC.',
     user_id: 2,
     post_id: 19
   },
   {
-    comment_text: 'First.',
+    comment_text: 'Id be a free man.',
     user_id: 10,
     post_id: 1
   },
   {
-    comment_text: 'Iduem risus leo lama nunc leo',
+    comment_text: 'Hunter x Hunter.',
     user_id: 10,
     post_id: 12
   }
