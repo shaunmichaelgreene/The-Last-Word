@@ -1,6 +1,6 @@
 <article class="post">
   <div class="post-text">
-    <a href="/post/{{id}}">{{text}}</a>
+    <a href="/post/{{id}}">{{text}} {{#unless is_active}}| <i class="fa-solid fa-lock"></i>{{/unless}}</a>
   </div>
   <div class="meta">
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>

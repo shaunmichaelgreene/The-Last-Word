@@ -1,39 +1,45 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Last Word</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <link rel="stylesheet" href="/stylesheets/custom.style.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Last Word</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        />
+        <script src="https://kit.fontawesome.com/6eae338ef5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
 
-<body>
-  <div class="wrapper">
-    <header>
-      <h1><a href="/">The Last Word</a>
-      </h1>
-      <nav>
-      {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1><a href="/">The Last Word <i class="fa-solid fa-comment-slash"></i></i></a>
+                </h1>
+                <nav>
+                    {{#if loggedIn}}
+                        <a href="/dashboard">Dashboard</a>
+                        <button id="logout" class="btn-no-style">Log Out</button>
+                    {{else}}
+                        <a href="/login">login</a>
+                    {{/if}}
+                </nav>
+            </header>
+            <main>
+                {{{body}}}
+            </main>
+            <footer>
+                Hope you got The Last Word!
+            </footer>
+        </div>
+        <script
+            src="https://kit.fontawesome.com/6eae338ef5.js"
+            crossorigin="anonymous"
+        ></script>
+        {{#if loggedIn}}
+            <script src="/javascript/logout.js"></script>
         {{/if}}
-      </nav>
-    </header>
-    <main>
-      {{{ body }}}
-    </main>
-    <footer>
-    Hope you got the Last Word!
-    </footer>
-  </div>
-
-{{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
+    </body>
 
 </html>
