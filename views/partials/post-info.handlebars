@@ -4,7 +4,7 @@
   </div>
   <div class="meta">
     <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-    |  Posted by {{user.dataValues.username}} on {{format_date created_at}} | {{format_timeElapsed created_at}} ago.
+    |  Posted by {{user.dataValues.username}}{{user.username}} on {{format_date created_at}} | {{format_timeElapsed created_at}} ago.
   </div>
   {{#if is_active}}
     <div id="post-active" class="meta">This post is still active, you can still get The Last Word!</div>
